@@ -1,15 +1,22 @@
-<section>
-  <div class="column">
-    <h2>Stay in touch.</h2>
-  </div>
-  <div class="column">
-    <div class="form-centered">
-      <%= simple_form_for @visitor do |f| %>
-        <%= f.error_notification %>
-        <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
-        <br/>
-        <%= f.button :submit, "Sign up for the mailing list", :class => "submit" %>
-      <% end %>
-    </div>
+<section id="home">
+  <%= image_tag("Logo.png")  %>
+  <iframe id="music" width="560" height="600" src="https://www.youtube.com/embed/De0QWVLADQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+  </iframe>
+  <div id="text">
+    <h1>VIP Experiences</h1>
+    <p>Paris Vip experiences include early entry, soundcheck access, <br/> A pre show hang with paris and more</p>
+    <button>Access Vip</button>
   </div>
 </section>
+
+<section id="filler">
+</section>
+
+<section id="tour">
+  <%= render "tour" %>
+</section>
+
+<section id="parallax">
+</section>
+
+<%= render "footer" %>

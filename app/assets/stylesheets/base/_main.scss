@@ -1,0 +1,158 @@
+$color-1: #770018;
+$color-2: #121212;
+
+@font-face {
+  font-family: "VCR Font";
+  src: url('/assets/VCRFont.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800,900');
+
+$font-1: VCR Font;
+$font-2: Montserrat;
+
+.navbar {
+  background: rgba(34, 34, 34, 0.7) !important;
+  li a {
+    color: white !important;
+    font-family: $font-1;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
+
+button {
+  background-color: $color-1;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: black;
+  border: 1px solid black;
+}
+
+body {
+  color: white;
+}
+section {
+  height: 100vh;
+  background: black;
+  margin: 0;
+  position: relative;
+}
+
+#home {
+  background-image: image-url("AlbumCover.png");
+  background-position-y: center;
+  background-size: 100% 150%;
+  img {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 80%;
+  }
+  iframe {
+    position: absolute;
+    bottom: -40%;
+    left: 10%;
+    width: 80%;
+    z-index: 1;
+  }
+  #text {
+    position: absolute;
+    bottom: -60%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}
+
+#tour {
+  height: 30vh;
+  padding: 0 3%;
+  h6 {
+    display: inline-block;
+    padding-left: 1%;
+  }
+  table {
+    margin-left: 1.5%;
+    .col-3 {
+      width: 7%;
+    }
+  }
+}
+#filler {
+  height: 70vh;
+}
+footer {
+   position: relative;
+   height: 30vh;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #121212;
+   color: white;
+   text-align: center;
+   input.btn.submit {
+     background-color: transparent;
+     border: 1px solid white;
+     border-radius: 0px;
+   }
+   h4 {
+     font-family: $font-2;
+     text-align: left;
+   }
+   i {
+     font-size: x-large !important;
+   }
+   p {
+     font-family: $font-2;
+     text-align: left;
+   }
+   h3 {
+     margin-top: 22%;
+     font-family: VCR Font;
+     text-align:  center;
+     text-transform:  uppercase;
+     font-size: -webkit-xxx-large;
+   }
+   #social {
+     li {
+       display: inline-block;
+       margin: 10% 7%;
+       &:last-child {
+         margin-right: 25%;
+       }
+     }
+   }
+   li {
+     list-style:  none;
+     margin-top: 10%;
+     text-align:  left;
+     &:first-child {
+       margin-top: 20%;
+     }
+     a {
+       color: white;
+       font-family: $font-1;
+       font-size: large;
+       text-transform: uppercase;
+     }
+   }
+}
+
+td {
+  border-top: 0px solid transparent !important;
+  color: white;
+  height: 8vh;
+}
+
+#parallax {
+  background-image: image-url("BottomParallaxPicture.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  height: 70vh;
+}
