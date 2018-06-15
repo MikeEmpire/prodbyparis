@@ -11,6 +11,10 @@ $color-2: #121212;
 $font-1: VCR Font;
 $font-2: Montserrat;
 
+#visitor_email {
+  background-color: black;
+}
+
 .navbar {
   background: rgba(34, 34, 34, 0.7) !important;
   li a {
@@ -44,6 +48,7 @@ section {
   background-image: image-url("AlbumCover.png");
   background-position-y: center;
   background-size: 100% 150%;
+  background-repeat: no-repeat;
   img {
     position: absolute;
     bottom: 20%;
@@ -67,7 +72,11 @@ section {
     z-index: 1;
   }
 }
-
+#social {
+  li {
+    display: inline;
+  }
+}
 #tour {
   height: 30vh;
   padding: 0 3%;
@@ -90,6 +99,7 @@ footer {
    height: 30vh;
    left: 0;
    bottom: 0;
+   font-family: $font-1;
    width: 100%;
    background-color: #121212;
    color: white;
@@ -100,14 +110,12 @@ footer {
      border-radius: 0px;
    }
    h4 {
-     font-family: $font-2;
      text-align: left;
    }
    i {
      font-size: x-large !important;
    }
    p {
-     font-family: $font-2;
      text-align: left;
    }
    h3 {
@@ -116,15 +124,6 @@ footer {
      text-align:  center;
      text-transform:  uppercase;
      font-size: -webkit-xxx-large;
-   }
-   #social {
-     li {
-       display: inline-block;
-       margin: 10% 7%;
-       &:last-child {
-         margin-right: 25%;
-       }
-     }
    }
    li {
      list-style:  none;

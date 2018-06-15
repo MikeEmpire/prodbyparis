@@ -3,11 +3,17 @@
   footer {
     height: auto;
   }
+  #home {
+    background-size: 100% 70%;
+  }
 }
 @media (min-width:375px) {
   /* smartphones, iPhone, portrait 480x320 phones */
   i  {
     font-size: medium;
+  }
+  #home {
+    background-size: 100% 70%;
   }
 }
 @media (min-width:425px) {
@@ -15,11 +21,17 @@
   footer {
     height: auto;
   }
+  #home {
+    background-size: 100% 70%;
+  }
 }
 @media (min-width:481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   footer {
     height: auto;
+  }
+  #home {
+    background-size: 100% 70%;
   }
 }
 @media (min-width:641px) {
@@ -27,11 +39,17 @@
   footer {
     height: auto;
   }
+  #home {
+    background-size: 100% 100%;
+  }
 }
 @media (min-width:961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   footer {
     height: 30vh;
+  }
+  #home {
+    background-size: 100% 100%;
   }
 }
 @media (min-width:1025px) {
@@ -39,10 +57,16 @@
   footer {
     height: 30vh;
   }
+  #home {
+    background-size: 100% 150%;
+  }
 }
 @media (min-width:1281px) {
   /* hi-res laptops and desktops */
   footer {
     height: 30vh;
+  }
+  #home {
+    background-size: 100% 150%;
   }
 }
