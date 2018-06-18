@@ -13,6 +13,7 @@ $font-2: Montserrat;
 
 #visitor_email {
   background-color: black;
+  color: white;
 }
 
 .navbar {
@@ -78,7 +79,7 @@ section {
   }
 }
 #tour {
-  height: 30vh;
+  height: auto;
   padding: 0 3%;
   h6 {
     display: inline-block;
